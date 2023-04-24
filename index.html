@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div style="margin-left: 50px;" id="root">
+
+    </div>
+    <script type="text/babel">
+    
+      let div = <div>
+        <h1>Topics Covered</h1>
+        <p>Following is the list of all the topics we covered in MDN learning area</p>
+        </div>
+        let start=<div style={{marginTop:"40px"}}>
+            <a style={{color:"blue"}} href="#">Getting started with the web</a>
+            <p>Provides a practical introduction to web development for complete beginners</p>
+            </div>
+
+            let html = <div style={{marginTop:'40px'}}>
+                <a href="#">HTML-- Structuring the web</a>
+                <p>Html is the language that we use to strucure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail</p>
+                </div>
+
+                let css=<div style={{marginTop:"40px"}}>
+                    <a href="#">CSS --- Styling the web</a>
+                    <p>CSS is the language that we use to control web contents style and layout, as well as adding behaviour like animation. This topic provides comprehensive coverage of CSS.</p>
+                    </div>
+        ReactDOM.render(<div>{div} {start} {html} {css}</div>,document.getElementById('root'))
+    </script>
+    
+</body>
+</html>
